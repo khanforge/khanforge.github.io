@@ -30,7 +30,7 @@ function Nav(props) {
 
 
     return (
-        <div className="flex border-b-2 border-slate-950 bg-slate-900 fixed top-0 flex-col w-full justify-between items-center text-white md:px-10 md:flex-row md:py-3">
+        <div className="flex border-b-2 border-slate-950 bg-slate-900 fixed top-0 flex-col w-full justify-between items-center text-white md:px-10 md:flex-row md:py-3 z-50">
             <div className={`relative sm:static w-full sm:w-auto cursor-pointer md:hidden z-10`}>
                 <div className={`absolute right-5 top-2 `}
                     onClick={() => { handleMenuBtn() }}
