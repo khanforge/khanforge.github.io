@@ -4,15 +4,15 @@ import { Nav, Hero, About, Education, Experience, Projects, Contact } from './Co
 function App() {
 
   return (
-    <>
+    <div className=''>
       <Nav />
       <Hero />
       <About />
-      <Education />
+      {/* <Education />
       <Experience />
       <Projects />
-      <Contact />
-    </>
+      <Contact /> */}
+    </div>
   )
 }
 
