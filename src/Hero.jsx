@@ -3,7 +3,7 @@ const Hero = (props) => {
         <>
             <section id="hero" className="mt-16 w-full flex justify-center items-center sm:mt-24 md:mt-28">
                 <div className="relative w-full">
-                    <div className="absolute left-2 z-20 sm:left-16 md:left-20">
+                    <div className="relative left-2 z-20 sm:left-16 md:left-20">
                         <div className="flex flex-row gap-1 sm:gap-2 lg:gap-4">
                             <div className="flex flex-col items-center">
                                 <div className="h-6 w-6 rounded-full bg-violet-600 sm:h-7 sm:w-7 lg:h-10 lg:w-10" />

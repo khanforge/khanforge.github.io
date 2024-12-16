@@ -678,6 +678,14 @@ video {
   height: 100vh;
 }
 
+.h-\[250px\] {
+  height: 250px;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
 .w-1 {
   width: 0.25rem;
 }
