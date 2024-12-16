@@ -47,14 +47,14 @@ function Nav(props) {
                 <img src="./logo.png" className="text-white h-12 w-12 py-2" alt="" />
             </div>
 
-            <div className="fixed md:static md:flex w-full top-12">
+            <div className="fixed w-full md:static md:flex ">
                 {/* Adding transition classes */}
-                <ul className={`flex flex-col justify-center items-center text-sm md:text-xl md:justify-end w-full md:flex-row z-0
-                    ${activeMenu ? 'block opacity-100 transform translate-y-0 bg-slate-900' : ' opacity-0 transform -translate-y-full'} 
+                <ul className={`flex flex-col gap-5 justify-center items-center h-[100vh] w-full text-2xl md:text-xl md:justify-end md:flex-row z-0 md:gap-0 md:h-0
+                    ${activeMenu ? 'block opacity-100 transform translate-x-0 bg-slate-900' : ' opacity-0 transform -translate-x-full'} 
                     transition-all duration-500 ease-in-out`}>
                     {NavItems.map((item, index) => (
                         <li id={`link-${index}`}
-                            className={`${item.id === isActive && 'text-yellow-200 md:border-yellow-200/100'} sm:border-b-4 sm:border-yellow-100/0 cursor-pointer sm:px-1 md:mr-1 lg:px-3`}
+                            className={`${item.id === isActive && 'text-[#f5a3a3] md:border-violet-200/100'} sm:border-b-4 sm:border-violet-100/0 cursor-pointer sm:px-1 md:mr-1 lg:px-3`}
                             key={index}
                             onClick={() => handleIsActive(item.id)}
                         >
