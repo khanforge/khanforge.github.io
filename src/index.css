@@ -642,16 +642,16 @@ video {
   height: 285px;
 }
 
+.h-\[52vh\] {
+  height: 52vh;
+}
+
 .h-full {
   height: 100%;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[52vh\] {
-  height: 52vh;
+.h-\[384px\] {
+  height: 384px;
 }
 
 .w-1 {
@@ -668,10 +668,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-4\/5 {
-  width: 80%;
 }
 
 .-translate-x-full {
@@ -714,10 +710,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-items-center {
-  justify-items: center;
 }
 
 .gap-1 {
@@ -768,10 +760,6 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.text-justify {
-  text-align: justify;
 }
 
 .text-2xl {
@@ -887,16 +875,32 @@ video {
     height: 350px;
   }
 
-  .sm\:h-\[58vh\] {
-    height: 58vh;
+  .sm\:h-\[60vh\] {
+    height: 60vh;
+  }
+
+  .sm\:h-\[50vh\] {
+    height: 50vh;
+  }
+
+  .sm\:h-\[85vh\] {
+    height: 85vh;
   }
 
   .sm\:h-\[70vh\] {
     height: 70vh;
   }
 
-  .sm\:h-\[71vh\] {
-    height: 71vh;
+  .sm\:h-\[260px\] {
+    height: 260px;
+  }
+
+  .sm\:h-\[360px\] {
+    height: 360px;
+  }
+
+  .sm\:h-\[370px\] {
+    height: 370px;
   }
 
   .sm\:w-7 {
@@ -967,16 +971,24 @@ video {
     height: 0px;
   }
 
-  .md\:h-\[105vh\] {
-    height: 105vh;
-  }
-
-  .md\:h-\[100vh\] {
-    height: 100vh;
-  }
-
   .md\:h-\[90vh\] {
     height: 90vh;
+  }
+
+  .md\:h-\[80vh\] {
+    height: 80vh;
+  }
+
+  .md\:h-\[75vh\] {
+    height: 75vh;
+  }
+
+  .md\:h-\[420px\] {
+    height: 420px;
+  }
+
+  .md\:h-\[400px\] {
+    height: 400px;
   }
 
   .md\:flex-row {
@@ -1036,6 +1048,18 @@ video {
     height: 450px;
   }
 
+  .lg\:h-\[90vh\] {
+    height: 90vh;
+  }
+
+  .lg\:h-\[485pxpx\] {
+    height: 485pxpx;
+  }
+
+  .lg\:h-\[485px\] {
+    height: 485px;
+  }
+
   .lg\:w-10 {
     width: 2.5rem;
   }
@@ -1069,6 +1093,38 @@ video {
 
   .xl\:h-\[375px\] {
     height: 375px;
+  }
+
+  .xl\:h-\[40vh\] {
+    height: 40vh;
+  }
+
+  .xl\:h-\[90vh\] {
+    height: 90vh;
+  }
+
+  .xl\:h-\[80vh\] {
+    height: 80vh;
+  }
+
+  .xl\:h-\[500px\] {
+    height: 500px;
+  }
+
+  .xl\:h-\[485px\] {
+    height: 485px;
+  }
+
+  .xl\:h-\[450px\] {
+    height: 450px;
+  }
+
+  .xl\:h-\[425px\] {
+    height: 425px;
+  }
+
+  .xl\:h-\[415px\] {
+    height: 415px;
   }
 
   .xl\:gap-6 {

@@ -1,7 +1,7 @@
 const Hero = (props) => {
     return (
         <>
-            <section id="hero" className="mt-16 w-full flex justify-center items-center h-[52vh] sm:h-[71vh] md:h-[90vh] sm:mt-24 md:mt-28">
+            <section id="hero" className="mt-16 w-full flex justify-center items-center h-[285px] sm:h-[370px] md:h-[400px] lg:h-[485px] xl:h-[415px] sm:mt-24 md:mt-28">
                 <div className="relative w-full h-full">
                     <div className="absolute left-2 z-20 sm:left-16 md:left-20">
                         <div className="flex flex-row gap-1 sm:gap-2 lg:gap-4">
