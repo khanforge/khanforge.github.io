@@ -1,5 +1,5 @@
 import { bioData } from './assets/DataItems'
-import { BriefcaseBusiness } from 'lucide-react';
+import { BriefcaseBusiness, SendHorizontal } from 'lucide-react';
 
 const About = () => {
     return (
@@ -15,11 +15,17 @@ const About = () => {
                 <div id="about-para" className="m-2 md:w-1/2 lg:w-[60%] xl:w-[70%] text-lg">
                     <div className="text-justify">
                         Welcome to my portfolio! I'm Parvej Khan, a passionate tech enthusiast and aspiring computer scientist currently pursuing my Master of Technology in Computer Science and Engineering at NIT Delhi. With hands-on experience in diverse domains such as web development, game design, and machine learning, I thrive on crafting innovative solutions to real-world challenges. From building immersive VR training simulations at DRDO to developing efficient web platforms and interactive tools, I am dedicated to blending creativity and technology to drive impactful results. My journey is fueled by a commitment to continuous learning and a drive to explore the ever-evolving tech landscape.
-                        <span className='flex gap-2 w-32 p-2 bg-slate-800 rounded-md cursor-pointer justify-center items-center mt-2 transition-all duration-150 ease-in-out hover:scale-105 hover:text-slate-900 hover:bg-slate-100'>
-                            <BriefcaseBusiness />
+                        <span className='flex gap-2 w-40 p-2 bg-slate-800 rounded-md cursor-pointer justify-center items-center mt-2 transition-all duration-200 ease-in-out scale-95 hover:scale-100 hover:text-slate-900 hover:bg-slate-100'>
+                            <span className="">
+                                <BriefcaseBusiness />
+                            </span>
+                            <span className="hidden">
+                                <SendHorizontal />
+                            </span>
                             <span className="">
                                 Hire Me!
                             </span>
+
                         </span>
                     </div>
                 </div>

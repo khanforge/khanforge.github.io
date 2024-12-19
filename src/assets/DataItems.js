@@ -24,3 +24,39 @@ export const bioData = [
         value: "Travel, Cooking, & Music"
     }
 ]
+
+export const education = [
+    {
+        field: "M.Tech",
+        description: [
+            {
+                specialization: "Computer Science and Engineering",
+                institution: "NIT Delhi",
+                duration: "2023 - Present",
+                score: "CGPA: 7.6"
+            }
+        ]
+    },
+    {
+        field: "B.Tech",
+        description: [
+            {
+                specialization: "Information Technology",
+                institution: "JSS Academy of Technical Education, Noida",
+                duration: "2018 - 2021",
+                score: "CGPA: 7.9"
+            }
+        ]
+    },
+    {
+        field: "Diploma",
+        description: [
+            {
+                specialization: "Computer Science and Engineering",
+                institution: "Govt. Polytechnic Rampur",
+                duration: "2015 - 2018",
+                score: "Percentage: 75%"
+            }
+        ]
+    }
+];

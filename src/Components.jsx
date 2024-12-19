@@ -5,5 +5,5 @@ import Education from './Education';
 import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
-
-export { Nav, Hero, About, Education, Experience, Projects, Contact };
+import Graph from './Graph';
+export { Nav, Hero, About, Education, Experience, Projects, Contact, Graph };

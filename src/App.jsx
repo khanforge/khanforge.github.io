@@ -1,5 +1,6 @@
 
-import { Nav, Hero, About, Education, Experience, Projects, Contact } from './Components'
+import { Nav, Hero, About, Education, Experience, Projects, Contact, Graph } from './Components'
+import { education } from './assets/DataItems'
 
 function App() {
 
@@ -8,10 +9,11 @@ function App() {
       <Nav />
       <Hero />
       <About />
-      <Education />
+      <Graph sectionName="Education" data={education} />
+      {/* <Education />
       <Experience />
       <Projects />
-      <Contact />
+      <Contact /> */}
     </div>
   )
 }
