@@ -29,23 +29,26 @@ const Graph = (props) => {
     //     ))}
     //   </div>
     // </section>
-    <section className="time-graph mt-2">
-      <h1 className="text-xl text-slate-50 font-medium">Education</h1>
-      <div className='h-1 w-32 border-[1px] border-[#f5a3a3] rounded-sm bg-transparent' />
-      <div className="flex  m-5">
-        <div className="">
-          {data.map((item, index) => (
-            <div key={index} className="flex flex-col justify-center items-center gap-0 m-0">
-              <div className="relative flex flex-row ">
+    <section className="time-graph mt-6">
+      <div className="flex flex-col">
+        <h1 className="text-2xl font-bold text-violet-400 ml-1">{props.sectionName} :</h1>
+        <div className='h-1 w-32 border-[1px] border-[#f5a3a3] rounded-sm bg-transparent' />
+      </div>
 
-                <div className="h-6 w-6 rounded-full bg-violet-700 " />
-                <div className="absolute w-6 text-slate-50 ml-8 top-1/2 -translate-y-1/3">
-                  {item.field}
-                </div>
+      <div className="mt-4">
+        {data.map((item, index) => (
+          <div key={index} className="flex flex-col justify-start items-start gap-0 m-0">
+            <div className="relative flex flex-row items-center">
+
+              <div className="h-6 w-6 rounded-full bg-violet-600 " />
+              <div className="absolute w-6 font-semibold ml-8 top-[2px] text-violet-300 ">
+                {item.field}
               </div>
-              <div className='border-l-2 border-violet-700 border-dotted w-1 text-slate-50'>
+            </div>
+            <div className="ml-[11px]">
+              <div className='border-l-2 border-violet-700 border-dotted w-full text-slate-50'>
                 {item.description.map((meta, index) => (
-                  <div className='ml-5 w-full'>
+                  <div className={`ml-5 ${item.id + 1 !== data.length && 'pb-4'} w-full text-sm font-medium`}>
                     <div className=''>{meta.specialization}</div>
                     <div className=''>{meta.institution}</div>
                     <div className=''>{meta.duration}</div>
@@ -54,9 +57,10 @@ const Graph = (props) => {
                 ))}
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
+
     </section>
   )
 }

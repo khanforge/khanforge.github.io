@@ -27,6 +27,7 @@ export const bioData = [
 
 export const education = [
     {
+        id: 0,
         field: "M.Tech",
         description: [
             {
@@ -38,6 +39,7 @@ export const education = [
         ]
     },
     {
+        id: 1,
         field: "B.Tech",
         description: [
             {
@@ -49,6 +51,7 @@ export const education = [
         ]
     },
     {
+        id: 2,
         field: "Diploma",
         description: [
             {

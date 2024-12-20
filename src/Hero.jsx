@@ -12,7 +12,7 @@ const Hero = (props) => {
                             <div id="tagline" className="flex flex-col xl:gap-6">
                                 <span className="text-[1.6rem] font-bold text-slate-50 sm:text-[2.5rem] lg:text-[4rem] lg:font-medium">Full Stack Web-Developer</span>
                                 <div className="text-[3rem] sm:text-[6rem] font-extrabold flex flex-col gap-y-0 leading-none">
-                                    <span className="text-outline-2 sm:text-outline-4 ">Parvej </span>
+                                    <span className="text-outline-2 sm:text-outline-4 ">Parvej</span>
                                     <span className="text-[#673ab7]">Khan</span>
                                 </div>
                             </div>
