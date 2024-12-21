@@ -63,3 +63,41 @@ export const education = [
         ]
     }
 ];
+
+export const experience = [
+    {
+        field: "Teaching Assistant",
+        description: [
+            {
+                specialization: "Data Structures and Machine Learning Support",
+                institution: "NIT Delhi",
+                duration: "Aug 2023 – Present",
+                score: "Led tutorials, graded assignments, and improved teaching methods."
+            }
+        ]
+    },
+    {
+        field: "Game Development Intern",
+        description: [
+            {
+                specialization: "Multiplayer VR Shooter Game Development",
+                institution: "DRDO",
+                duration: "Aug 2020 – July 2021",
+                score: "Created realistic scenarios, 3D models, and multiplayer interactions using Unity."
+            }
+        ]
+    },
+    {
+        field: "Web Development Intern",
+        description: [
+            {
+                specialization: "School Management ERP Development",
+                institution: "JDMR Ischool Pvt. Ltd.",
+                duration: "July 2020 – Oct 2020",
+                score: "Built a Django-based ERP with responsive front-end and secure access."
+            }
+        ]
+    }
+];
+
+

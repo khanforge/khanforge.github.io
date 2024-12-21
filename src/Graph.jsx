@@ -38,11 +38,11 @@ const Graph = (props) => {
       <div className="mt-4">
         {data.map((item, index) => (
           <div key={index} className="flex flex-col justify-start items-start gap-0 m-0">
-            <div className="relative flex flex-row items-center">
+            <div className="flex flex-row items-center gap-2">
 
               <div className="h-6 w-6 rounded-full bg-violet-600 " />
-              <div className="absolute w-6 font-semibold ml-8 top-[2px] text-violet-300 ">
-                {item.field}
+              <div className=" font-semibold top-[2px] text-violet-300 ">
+                <div className="  ">{item.field}</div>
               </div>
             </div>
             <div className="ml-[11px]">
