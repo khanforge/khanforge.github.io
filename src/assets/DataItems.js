@@ -66,6 +66,7 @@ export const education = [
 
 export const experience = [
     {
+        id:0,
         field: "Teaching Assistant",
         description: [
             {
@@ -77,6 +78,7 @@ export const experience = [
         ]
     },
     {
+        id:1,
         field: "Game Development Intern",
         description: [
             {
@@ -88,6 +90,7 @@ export const experience = [
         ]
     },
     {
+        id:2,
         field: "Web Development Intern",
         description: [
             {
