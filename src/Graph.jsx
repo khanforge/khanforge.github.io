@@ -19,7 +19,7 @@ const Graph = (props) => {
                 <div className="  ">{item.field}</div>
               </div>
             </div>
-            <div className="ml-[11px]">
+            <div className="ml-[14px]">
               <div className='border-l-2 border-violet-700 border-dotted w-full text-slate-50'>
                 {item.description.map((meta, index) => (
                   <div className={`ml-5 ${item.id + 1 !== data.length && 'pb-4'} w-full text-sm font-medium`}>
