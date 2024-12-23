@@ -3,7 +3,11 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'tangerine': ['"Tangerine"', 'sans-serif'], // Replace with your font name
+      },
+    },
   },
   plugins: [
     function ({ addUtilities }) {
