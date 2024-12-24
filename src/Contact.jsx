@@ -21,7 +21,7 @@ const Contact = () => {
     };
 
     return (
-        <section className='text-white flex flex-col justify-center items-center w-full bg-slate-950'>
+        <section className='text-white flex flex-col justify-around items-center w-full bg-slate-950 md:flex-row'>
             <div id="contact-details" className='flex flex-col items-center gap-1 font-extrabold p-10 font-tangerine'>
                 <span className='text-6xl '>Contact</span>
                 <span className='text-4xl'><a href="tel:6387480183">+91 6387480183</a></span>
@@ -30,7 +30,7 @@ const Contact = () => {
             <div id="contact-form">
                 <form action="" onSubmit={sendEmail} className='flex flex-col gap-2 text-black'>
                     <input type="text" name="name" placeholder='Name' id="" />
-                    <input type="email" name="email" placeholder='*@me.com' id="email" />
+                    <input type="email" name="to_email" placeholder='*@me.com' id="email" />
                     <textarea name="message" placeholder='Write your message ...' id="message"></textarea>
                     <input type="submit" className='text-white' value={`${isSending ? 'Sending ...' : "send"}`} />
                 </form>
