@@ -8,12 +8,12 @@ const Contact = () => {
         e.preventDefault();
         emailjs.sendForm('service_eqsxnms', 'template_prn4g0d', e.target, 'kj126XJSHeWocUUId').then(
             (res) => {
-                setIsSending(true);
+                setIsSending(false);
                 console.log("successfully sent");
                 alert("successfully sent")
             },
             (error) => {
-                setIsSending(true);
+                setIsSending(false);
                 console.log(error)
                 alert('Something went wrong, please try again.');
             }
@@ -28,11 +28,11 @@ const Contact = () => {
                 <span className='text-4xl'><a href="mailto:1999monustp+portfolio@gmail.com">1999monustp@gmail.com</a></span>
             </div>
             <div id="contact-form">
-                <form action="" onSubmit={sendEmail} className='flex flex-col gap-2 text-black'>
-                    <input type="text" name="name" placeholder='Name' id="" />
-                    <input type="email" name="to_email" placeholder='*@me.com' id="email" />
-                    <textarea name="message" placeholder='Write your message ...' id="message"></textarea>
-                    <input type="submit" className='text-white' value={`${isSending ? 'Sending ...' : "send"}`} />
+                <form action="" onSubmit={sendEmail} className='flex flex-col gap-2 text-black' >
+                    <input type="text" name="name" placeholder='Name' id="" required />
+                    <input type="email" name="to_email" placeholder='*@me.com' id="email" required />
+                    <textarea name="message" placeholder='Write your message ...' id="message" required></textarea>
+                    <input type="submit" className='text-white' onClick={() => setIsSending(true)} value={`${isSending ? 'Sending ...' : "send"}`} />
                 </form>
 
             </div>
