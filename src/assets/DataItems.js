@@ -66,7 +66,7 @@ export const education = [
 
 export const experience = [
     {
-        id:0,
+        id: 0,
         field: "Teaching Assistant",
         description: [
             {
@@ -78,7 +78,7 @@ export const experience = [
         ]
     },
     {
-        id:1,
+        id: 1,
         field: "Game Development Intern",
         description: [
             {
@@ -90,7 +90,7 @@ export const experience = [
         ]
     },
     {
-        id:2,
+        id: 2,
         field: "Web Development Intern",
         description: [
             {
@@ -103,4 +103,70 @@ export const experience = [
     }
 ];
 
+export const projects = [
+    {
+        id: 0,
+        projectName: "Multiplayer Game",
+        githubUrl: "",
+        imageUrl: "./projectImages/multiplayer.png",
+        category: "3D Game",
+        techStack: [
+            "Unity3D",
+            "PUN",
+            "Blender",
+            "Mixamo",
+            "VR"
+        ],
+        description: "Designed a VR-enabled multiplayer shooter game for soldier training, featuring realistic scenarios such as combat, bomb defusal, and hostage rescue, developed with Unity and Photon Networking for seamless real-time interactions."
+    },
+    {
+        id: 1,
+        projectName: "Conference Portal",
+        githubUrl: "https://github.com/khanforge/temsmet.github.io",
+        imageUrl: "./projectImages/temsmet2025.png",
+        category: "Web Development",
+        techStack: [
+            "React",
+            "Tailwind CSS"
+        ],
+        description: "Currently developing a responsive and user-friendly website for the TEMSMET 2025 conference, hosted by the NIT Delhi Technology and Engineering Management Society. The platform is built using React for dynamic rendering and Tailwind CSS for modern, responsive design. It serves as a centralized hub for attendees, providing event schedules, speaker profiles, registration forms, and real-time updates. The website emphasizes accessibility and intuitive navigation, ensuring a seamless experience for users across devices. Integrated live updates and contact features to keep participants informed and engaged throughout the conference."
+    },
+    {
+        id: 2,
+        projectName: "Polyglot System",
+        githubUrl: "https://github.com/khanforge/FlexiCart",
+        imageUrl: "./projectImages/polyglot-system.png",
+        category: "Web Development",
+        techStack: [
+            "Django",
+            "MongoDB",
+            "Bootstrap"
+        ],
+        description: "Built a dynamic e-commerce platform with Django, MongoDB, and a responsive UI for managing diverse product details."
+    },
+    {
+        id: 3,
+        projectName: "Movies Land",
+        githubUrl: "https://github.com/khanforge/moviesLand",
+        imageUrl: "./projectImages/movies-land.png",
+        category: "Web App",
+        techStack: [
+            "React",
+            "OMDb API"
+        ],
+        description: "Developed a React app to fetch and display movie details using the OMDb API with a user-friendly interface."
+    },
+    {
+        id: 4,
+        projectName: "Route Optimizer",
+        githubUrl: "https://github.com/khanforge/pygame/blob/master/RouteOptimizer.py",
+        imageUrl: "./projectImages/route-optimizer.png",
+        category: "Desktop App",
+        techStack: [
+            "Pygame",
+            "Python"
+        ],
+        description: "Created an interactive pathfinding visualizer to compute and display the shortest route using algorithms and animations."
+    }
+];
 

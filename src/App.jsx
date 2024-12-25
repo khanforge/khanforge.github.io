@@ -14,7 +14,7 @@ function App() {
           <Graph sectionName="Education" data={education} classes="w-32" />
           <Graph sectionName="Experience" data={experience} classes="w-36" />
         </div>
-        <Projects />
+        <Projects classes='w-28' />
       </div>
       <Contact />
     </>
