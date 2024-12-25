@@ -15,13 +15,13 @@ const About = () => {
                 <div id="about-para" className="lg:w-full xl:w-[70%] text-lg">
                     <div className="text-justify">
                         Welcome to my portfolio! I'm Parvej Khan, a passionate tech enthusiast and aspiring computer scientist currently pursuing my Master of Technology in Computer Science and Engineering at NIT Delhi. With hands-on experience in diverse domains such as web development, game design, and machine learning, I thrive on crafting innovative solutions to real-world challenges. From building immersive VR training simulations at DRDO to developing efficient web platforms and interactive tools, I am dedicated to blending creativity and technology to drive impactful results. My journey is fueled by a commitment to continuous learning and a drive to explore the ever-evolving tech landscape.
-                        <span 
+                        <span
                             className='flex gap-2 w-40 p-2 bg-slate-800 rounded-md cursor-pointer justify-center 
                                 items-center mt-2 transition-all duration-200 ease-in-out scale-95 hover:scale-100 hover:text-slate-900 hover:bg-slate-100'
-                            onClick = { 
+                            onClick={
                                 () => {
-                                    window.open("https://drive.google.com/file/d/1vQBXW0mhDxYvZADjGjkS6wrpMYpkiJwI/view?usp=drive_link", "_blank");
-                                }  
+                                    window.open("https://drive.google.com/file/d/1Y52gdQRu6G1K8m8A53PZR0pjb8uWz5lU/view?usp=drive_link", "_blank");
+                                }
                             }
                         >
                             <span className="">
