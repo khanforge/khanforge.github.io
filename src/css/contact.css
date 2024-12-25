@@ -1,0 +1,60 @@
+#contact-form input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    border-bottom: 2px solid rgba(139, 92, 246, 0.5);
+    background: transparent;
+    padding: 10px;
+    color: white
+}
+
+textarea {
+    resize: none;
+    width: 20rem;
+}
+
+#contact-form input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    /* border: 2px solid #007bff; */
+    border-bottom: 2px solid rgba(139, 92, 246, 1);
+    background: transparent;
+    outline: none;
+    transition: all;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+input::placeholder,
+input[type="number"]::placeholder,
+textarea::placeholder {
+    font: bold;
+    font-size: larger;
+    color: rgba(139, 92, 246, 1);
+}
+
+input:focus::placeholder,
+input[type="number"]:focus::placeholder,
+textarea:focus::placeholder {
+    color: rgba(139, 92, 246, 0.5);
+    transition: all ease-in-out 0.3s;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    border: 1px solid rgba(139, 92, 246, 0.8);
+    border-radius: 5px;
+    font: bolder;
+    color: rgba(139, 92, 246, 1);
+    margin: auto;
+    padding: 5px 30px;
+    Padding-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(139, 92, 246, 0.5);
+    border: 1px solid rgba(139, 92, 246, 1);
+    color: white;
+    transition: all ease-in-out 0.3s;
+}

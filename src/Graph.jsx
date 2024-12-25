@@ -20,11 +20,11 @@ const Graph = (props) => {
               </div>
             </div>
             <div className="ml-[11px]">
-              <div className='border-l-2 border-violet-700 border-dotted w-full text-slate-50'>
+              <div className='border-l-2 border-violet-700 border-dashed w-full text-slate-50'>
                 {item.description.map((meta, index) => (
-                  <div 
-                  className={`ml-5 ${item.id + 1 !== data.length && 'pb-4'} w-full text-sm font-medium`}
-                  key={index}
+                  <div
+                    className={`ml-5 ${item.id + 1 !== data.length && 'pb-4'} w-full text-sm font-medium`}
+                    key={index}
                   >
                     <div className=''>{meta.specialization}</div>
                     <div className=''>{meta.institution}</div>
