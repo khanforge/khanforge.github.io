@@ -18,7 +18,7 @@ const ProgressBar = (props) => {
     return (
         <div id={`progress - bar-${props.id}`} >
             <div className='mb-1'>{skillObj.skillName}</div>
-            <div className=" h-5 w-96 border-2 border-violet-900 rounded-lg overflow-hidden">
+            <div className=" h-5 w-80 md:w-80 lg:w-96 border-2 border-violet-900 rounded-lg overflow-hidden">
                 <div className={` relative left-0 top-0 bg-violet-800/60 h-5 transition-all transform duration-100 rounded-sm`} style={{ width: `${skillLevel}%` }} >
                     <div className="absolute right-2 top-0 text-xs text-violet-300">{skillLevel}%</div>
                 </div>

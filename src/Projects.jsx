@@ -11,7 +11,7 @@ const Projects = (props) => {
                 <h1 className="text-2xl font-bold text-violet-400 ml-1">Projects :</h1>
                 <div className={`h-1 border-[1px] border-[#f5a3a3] rounded-sm bg-transparent ${props.classes}`} />
             </div>
-            <div className="flex flex-wrap w-full justify-start items-center gap-10">
+            <div className="flex flex-wrap w-full justify-center md:justify-start items-center gap-10">
                 {projects.map((proj, index) => (
                     <Card key={index} project={proj} />
                 ))}
