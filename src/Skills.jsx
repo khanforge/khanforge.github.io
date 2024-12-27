@@ -1,18 +1,20 @@
 import { useState, useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 const ProgressBar = (props) => {
     const [skillLevel, setSkillLevel] = useState(0);
     const skillObj = props.skillObj;
+    const inView = props.isInVeiw;
 
     useEffect(() => {
-        if (skillLevel < skillObj.sillLevel) {
+        if (inView && skillLevel < skillObj.sillLevel) {
             const timer = setTimeout(() => {
                 setSkillLevel(skillLevel + 1);
             }, 25)
             return () => clearTimeout(timer);
         }
 
-    }, [skillLevel])
+    }, [skillLevel, inView])
     return (
         <div id={`progress - bar-${props.id}`} >
             <div className='mb-1'>{skillObj.skillName}</div>
@@ -27,8 +29,11 @@ const ProgressBar = (props) => {
 }
 
 const Skills = (props) => {
+    const { ref, inView } = useInView({
+        threshold: 0.2,
+    })
     return (
-        <div id={`skills`} className='text-white mt-6 w-full'>
+        <div id={`skills`} ref={ref} className='text-white mt-6 w-full'>
             <div className="flex flex-col">
                 <h1 className="text-2xl font-bold text-violet-400 ml-1">Skills :</h1>
                 <div className={`h-1 border-[1px] border-[#f5a3a3] rounded-sm bg-transparent ${props.classes}`} />
@@ -39,7 +44,7 @@ const Skills = (props) => {
                     {
                         props.skills.map((skill, index) => (
                             <div className="w-full" key={index}>
-                                <ProgressBar id={index} skillObj={skill} />
+                                <ProgressBar isInVeiw={inView} id={index} skillObj={skill} />
                             </div>
                         ))
                     }
