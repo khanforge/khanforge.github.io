@@ -17,7 +17,6 @@ textarea {
 input[type="email"]:focus,
 input[type="number"]:focus,
 textarea:focus {
-    /* border: 2px solid #007bff; */
     border-bottom: 2px solid rgba(139, 92, 246, 1);
     background: transparent;
     outline: none;

@@ -49,8 +49,8 @@ function Nav(props) {
 
             <div className="fixed w-full md:static md:flex ">
                 {/* Adding transition classes */}
-                <ul className={`flex flex-col gap-5 justify-center items-center h-[100vh] w-full text-2xl md:text-xl md:justify-end md:flex-row z-0 md:gap-0 md:h-0
-                    ${activeMenu ? 'block opacity-100 transform translate-x-0 bg-slate-900' : ' opacity-0 transform -translate-x-full'} 
+                <ul className={`flex flex-col gap-5 justify-center items-center h-[0vh] w-0 text-2xl md:text-xl md:justify-end md:flex-row z-0 md:gap-0 md:h-0
+                    ${activeMenu ? '!left-0 opacity-100 transform transition-transform translate-x-0 bg-slate-900 h-[100vh] w-full' : '-left-full opacity-0 transform transition-transform -translate-x-full'} 
                     transition-all duration-500 ease-in-out`}>
                     {NavItems.map((item, index) => (
                         <li id={`link-${index}`}
