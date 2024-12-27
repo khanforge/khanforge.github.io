@@ -53,13 +53,15 @@ function Nav(props) {
                     ${activeMenu ? '!left-0 opacity-100 transform transition-transform translate-x-0 bg-slate-900 h-[100vh] w-full' : '-left-full opacity-0 transform transition-transform -translate-x-full'} 
                     transition-all duration-500 ease-in-out`}>
                     {NavItems.map((item, index) => (
-                        <li id={`link-${index}`}
-                            className={`${item.id === isActive && 'text-[#f5a3a3] md:border-violet-200/100'} sm:border-b-4 sm:border-violet-100/0 cursor-pointer sm:px-1 md:mr-1 lg:px-3`}
-                            key={index}
-                            onClick={() => handleIsActive(item.id)}
-                        >
-                            {item.title}
-                        </li>
+                        <a href={item.link} key={index}>
+                            <li id={`link-${index}`}
+                                className={`${item.id === isActive && 'text-[#f5a3a3] md:border-violet-200/100'} sm:border-b-4 sm:border-violet-100/0 cursor-pointer sm:px-1 md:mr-1 lg:px-3`}
+                                onClick={() => handleIsActive(item.id)}
+                            >
+                                {item.title}
+                            </li>
+                        </a>
+
                     ))}
                 </ul>
             </div>

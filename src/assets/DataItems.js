@@ -135,7 +135,7 @@ export const projects = [
         id: 2,
         projectName: "Polyglot System",
         githubUrl: "https://github.com/khanforge/FlexiCart",
-        imageUrl: "./projectImages/polyglot-system.png",
+        imageUrl: "./projectImages/flexikart.png",
         category: "Web Development",
         techStack: [
             "Django",
@@ -148,8 +148,8 @@ export const projects = [
         id: 3,
         projectName: "Movies Land",
         githubUrl: "https://github.com/khanforge/moviesLand",
-        imageUrl: "./projectImages/movies-land.png",
-        category: "Web App",
+        imageUrl: "./projectImages/moviesworld.png",
+        category: "Web Development",
         techStack: [
             "React",
             "OMDb API"
@@ -160,8 +160,8 @@ export const projects = [
         id: 4,
         projectName: "Route Optimizer",
         githubUrl: "https://github.com/khanforge/pygame/blob/master/RouteOptimizer.py",
-        imageUrl: "./projectImages/route-optimizer.png",
-        category: "Desktop App",
+        imageUrl: "./projectImages/routeoptimizer.png",
+        category: "Desktop Development",
         techStack: [
             "Pygame",
             "Python"
@@ -170,3 +170,49 @@ export const projects = [
     }
 ];
 
+export const skills = [
+    {
+        skillName: "JavaScript",
+        sillLevel: 80
+    },
+    {
+        skillName: "C/C++",
+        sillLevel: 80
+    },
+    {
+        skillName: "Python",
+        sillLevel: 80
+    },
+    {
+        skillName: "Django",
+        sillLevel: 60
+    },
+    {
+        skillName: "React",
+        sillLevel: 70
+    },
+    {
+        skillName: "HTML",
+        sillLevel: 80
+    },
+    {
+        skillName: "CSS",
+        sillLevel: 80
+    },
+    {
+        skillName: "Tailwind CSS",
+        sillLevel: 80
+    },
+    {
+        skillName: "Git/GitHub",
+        sillLevel: 70
+    },
+    {
+        skillName: "Unity3D",
+        sillLevel: 60
+    },
+    {
+        skillName: "Blender",
+        sillLevel: 60
+    }
+];

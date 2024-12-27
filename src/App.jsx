@@ -1,8 +1,9 @@
 
-import { Nav, Hero, About, Projects, Contact, Graph } from './Components'
-import { education, experience } from './assets/DataItems'
+import { Nav, Hero, About, Projects, Contact, Graph, Skills } from './Components'
+import { education, experience, skills } from './assets/DataItems'
 
 function App() {
+
 
   return (
     <>
@@ -15,7 +16,9 @@ function App() {
           <Graph sectionName="Experience" data={experience} classes="w-36" />
         </div>
         <Projects classes='w-28' />
+        <Skills classes='w-20' skills={skills} />
       </div>
+
       <Contact />
     </>
   )

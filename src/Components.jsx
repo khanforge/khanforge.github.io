@@ -5,4 +5,5 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Graph from './Graph';
 import Card from './Card'
-export { Nav, Hero, About, Projects, Contact, Graph, Card };
+import Skills from './Skills';
+export { Nav, Hero, About, Projects, Contact, Graph, Card, Skills };
