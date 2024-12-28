@@ -6,4 +6,5 @@ import Contact from './Contact';
 import Graph from './Graph';
 import Card from './Card'
 import Skills from './Skills';
-export { Nav, Hero, About, Projects, Contact, Graph, Card, Skills };
+import SocialLinks from './SocialLinks';
+export { Nav, Hero, About, Projects, Contact, Graph, Card, Skills, SocialLinks };

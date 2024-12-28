@@ -1,5 +1,4 @@
-
-import { Nav, Hero, About, Projects, Contact, Graph, Skills } from './Components'
+import { Nav, Hero, About, Projects, Contact, Graph, Skills, SocialLinks } from './Components'
 import { education, experience, skills } from './assets/DataItems'
 
 function App() {
@@ -8,6 +7,7 @@ function App() {
   return (
     <>
       <Nav />
+      <SocialLinks />
       <Hero />
       <div className='m-4 p-4 sm:m-6 sm:p-6 md:m-8 md:p-8 lg:m-10 lg:p-10'>
         <About />
