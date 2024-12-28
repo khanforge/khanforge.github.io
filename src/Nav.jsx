@@ -23,8 +23,21 @@ function Nav(props) {
     const handleMenuBtn = () => {
         setActiveMenu(!activeMenu);
     }
-    const handleIsActive = (id) => {
+    const handleIsActive = (id, elementId) => {
         setIsActive(id);
+        let offset = 95;
+        if (width < 768) {
+            handleMenuBtn();
+            offset = 75;
+        }
+        const element = document.getElementById(elementId);
+        const rect = (element ? element.getBoundingClientRect() : 0);
+        const pos = rect ? (rect.top + window.scrollY - offset) : 0;
+        window.scroll({
+            top: pos,
+            behavior: "smooth"
+        });
+        console.log(pos);
     }
 
 
@@ -50,17 +63,16 @@ function Nav(props) {
             <div className="fixed w-full md:static md:flex ">
                 {/* Adding transition classes */}
                 <ul className={`flex flex-col gap-5 justify-center items-center h-[0vh] w-0 text-2xl md:text-xl md:justify-end md:flex-row z-0 md:gap-0 md:h-0
-                    ${activeMenu ? '!left-0 opacity-100 transform transition-transform translate-x-0 bg-slate-900 h-[100vh] w-full' : '-left-full opacity-0 transform transition-transform -translate-x-full'} 
-                    transition-all duration-500 ease-in-out`}>
+                    ${activeMenu ? 'static opacity-100 transform transition-transform translate-x-0 bg-slate-900 h-[100vh] w-full' : 'static opacity-0 transform transition-transform -translate-x-full'} 
+                    transition-transform duration-500 ease-in-out`}>
                     {NavItems.map((item, index) => (
-                        <a href={item.link} key={index}>
-                            <li id={`link-${index}`}
-                                className={`${item.id === isActive && 'text-[#f5a3a3] md:border-violet-200/100'} sm:border-b-4 sm:border-violet-100/0 cursor-pointer sm:px-1 md:mr-1 lg:px-3`}
-                                onClick={() => handleIsActive(item.id)}
-                            >
-                                {item.title}
-                            </li>
-                        </a>
+                        <li id={`link-${index}`}
+                            className={`${item.id === isActive && 'text-[#f5a3a3] md:border-violet-200/100'} sm:border-b-4 sm:border-violet-100/0 cursor-pointer sm:px-1 md:mr-1 lg:px-3`}
+                            onClick={() => handleIsActive(item.id, item.elementId)}
+                            key={index}
+                        >
+                            {item.title}
+                        </li>
 
                     ))}
                 </ul>

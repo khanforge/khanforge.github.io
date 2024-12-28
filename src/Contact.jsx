@@ -44,7 +44,7 @@ const Contact = () => {
     }
 
     return (
-        <section className='flex flex-col justify-around items-center w-full bg-slate-950 pt-10 pb-14 md:flex-row z-40'>
+        <section id="contact" className='flex flex-col justify-around items-center w-full bg-slate-950 pt-10 pb-14 md:flex-row z-40'>
             <div id="contact-details" className='flex flex-col items-center gap-1 font-extrabold text-violet-500 p-10 font-tangerine'>
                 <span className='text-8xl '>Contact</span>
                 <span className='text-4xl'><a href="tel:6387480183">+91 6387480183</a></span>

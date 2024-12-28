@@ -3,7 +3,7 @@ import { BriefcaseBusiness, SendHorizontal } from 'lucide-react';
 
 const About = () => {
     return (
-        <div className='text-slate-200'>
+        <div id="about" className='text-slate-200'>
             <div className="">
                 <div className="flex flex-col">
                     <h1 className='text-2xl font-bold text-violet-400 ml-1'>About Me    :</h1>

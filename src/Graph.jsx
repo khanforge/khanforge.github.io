@@ -3,7 +3,7 @@ import React from 'react'
 const Graph = (props) => {
   const data = props.data;
   return (
-    <section className="time-graph mt-6">
+    <section id={props.sectionName} className="time-graph mt-6">
       <div className="flex flex-col">
         <h1 className="text-2xl font-bold text-violet-400 ml-1">{props.sectionName} :</h1>
         <div className={`h-1 border-[1px] border-[#f5a3a3] rounded-sm bg-transparent ${props.classes}`} />
