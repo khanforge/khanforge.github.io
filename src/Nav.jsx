@@ -28,7 +28,7 @@ function Nav(props) {
         let offset = 95;
         if (width < 768) {
             handleMenuBtn();
-            offset = 75;
+            (id == 7) ? offset = 0 : offset = 75;
         }
         const element = document.getElementById(elementId);
         const rect = (element ? element.getBoundingClientRect() : 0);
