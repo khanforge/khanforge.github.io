@@ -4,7 +4,11 @@ import { useInView } from 'react-intersection-observer'
 const ProgressBar = (props) => {
     const [skillLevel, setSkillLevel] = useState(0);
     const skillObj = props.skillObj;
-    const inView = props.isInVeiw;
+    // const inView = props.isInVeiw;
+
+    const { ref, inView } = useInView({
+        threshold: 0.03,
+    })
 
     useEffect(() => {
         if (inView && skillLevel < skillObj.sillLevel) {
@@ -19,7 +23,7 @@ const ProgressBar = (props) => {
 
     }, [skillLevel, inView])
     return (
-        <div id={`progress - bar-${props.id}`} >
+        <div id={`progress - bar-${props.id}`} ref={ref} >
             <div className='mb-1'>{skillObj.skillName}</div>
             <div className=" h-5 w-80 md:w-80 lg:w-96 border-2 border-violet-900 rounded-lg overflow-hidden">
                 <div className={` relative left-0 top-0 bg-violet-800/60 h-5 transition-all transform duration-100 rounded-sm`} style={{ width: `${skillLevel}%` }} >
@@ -32,11 +36,9 @@ const ProgressBar = (props) => {
 }
 
 const Skills = (props) => {
-    const { ref, inView } = useInView({
-        threshold: 0.2,
-    })
+
     return (
-        <div id={`skills`} ref={ref} className='text-white mt-6 w-full'>
+        <div id={`skills`} className='text-white mt-6 w-full'>
             <div className="flex flex-col">
                 <h1 className="text-2xl font-bold text-violet-400 ml-1">Skills :</h1>
                 <div className={`h-1 border-[1px] border-[#f5a3a3] rounded-sm bg-transparent ${props.classes}`} />
@@ -47,7 +49,7 @@ const Skills = (props) => {
                     {
                         props.skills.map((skill, index) => (
                             <div className="w-full" key={index}>
-                                <ProgressBar isInVeiw={inView} id={index} skillObj={skill} />
+                                <ProgressBar id={index} skillObj={skill} />
                             </div>
                         ))
                     }
