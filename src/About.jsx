@@ -1,7 +1,7 @@
 import { bioData } from './assets/DataItems'
 import { BriefcaseBusiness, SendHorizontal } from 'lucide-react';
 
-const About = () => {
+const About = (props) => {
     return (
         <div id="about" className='text-slate-200'>
             <div className="">
@@ -19,9 +19,7 @@ const About = () => {
                             className='flex gap-2 w-40 p-2 bg-slate-800 rounded-md cursor-pointer justify-center 
                                 items-center mt-2 transition-all duration-200 ease-in-out scale-95 hover:scale-100 hover:text-slate-900 hover:bg-slate-100'
                             onClick={
-                                () => {
-                                    window.open("https://drive.google.com/file/d/1Y52gdQRu6G1K8m8A53PZR0pjb8uWz5lU/view?usp=drive_link", "_blank");
-                                }
+                                () => props.downloadResume(1)
                             }
                         >
                             <span className="">

@@ -37,13 +37,15 @@ function Nav(props) {
             top: pos,
             behavior: "smooth"
         });
-        console.log(pos);
+        if (id == 6) {
+            props.downloadResume(id);
+        }
     }
 
 
 
     return (
-        <div className="flex border-b-2 border-slate-950 bg-slate-900 fixed top-0 flex-col w-full justify-between items-center text-white md:px-10 md:flex-row md:py-3 z-50">
+        <div className="flex border-b-2 border-slate-950 bg-slate-900 fixed top-0 flex-col w-full justify-between items-center md:px-10 md:flex-row md:py-3 z-50">
             <div className={`relative sm:static w-full sm:w-auto cursor-pointer md:hidden z-10`}>
                 <div className={`absolute right-5 top-2 `}
                     onClick={() => { handleMenuBtn() }}
@@ -62,12 +64,12 @@ function Nav(props) {
 
             <div className="fixed w-full md:static md:flex ">
                 {/* Adding transition classes */}
-                <ul className={`flex flex-col gap-5 justify-center items-center h-[0vh] w-0 text-2xl md:text-xl md:justify-end md:flex-row z-0 md:gap-0 md:h-0
+                <ul className={`flex flex-col gap-5 justify-center items-center h-[0vh] w-0 text-2xl md:text-xl md:justify-end md:flex-row z-0 md:gap-0 md:h-0 text-violet-600
                     ${activeMenu ? 'static opacity-100 transform transition-transform translate-x-0 bg-slate-900 h-[100vh] w-full' : 'static opacity-0 transform transition-transform -translate-x-full'} 
                     transition-transform duration-500 delay-100 ease-in-out`}>
                     {NavItems.map((item, index) => (
                         <li id={`link-${index}`}
-                            className={`${item.id === isActive && 'text-violet-200 md:border-violet-300/100'} text-violet-600 sm:border-b-4 sm:border-violet-100/0 rounded-sm cursor-pointer sm:px-1 md:mr-1 lg:px-3`}
+                            className={`${item.id === isActive && 'text-violet-400 md:border-violet-400'} sm:border-b-4 sm:border-violet-100/0 rounded-sm cursor-pointer sm:px-1 md:mr-1 lg:px-3`}
                             onClick={() => handleIsActive(item.id, item.elementId)}
                             key={index}
                         >
