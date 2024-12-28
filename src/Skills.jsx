@@ -13,6 +13,9 @@ const ProgressBar = (props) => {
             }, 25)
             return () => clearTimeout(timer);
         }
+        else if (!inView) {
+            setSkillLevel(0);
+        }
 
     }, [skillLevel, inView])
     return (
@@ -39,7 +42,7 @@ const Skills = (props) => {
                 <div className={`h-1 border-[1px] border-[#f5a3a3] rounded-sm bg-transparent ${props.classes}`} />
             </div>
             <div className="flex justify-center items-center w-full mt-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-x-52">
 
                     {
                         props.skills.map((skill, index) => (
