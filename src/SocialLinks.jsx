@@ -22,7 +22,7 @@ const SocialLinks = () => {
                 <Github />
             </div>
         </div>
-    )
+    )   
 }
 
 export default SocialLinks
