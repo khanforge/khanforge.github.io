@@ -7,7 +7,7 @@ const Card = (props) => {
             <div id={`image-section-${project.id}`} className='relative  h-[10rem] w-[291px]'>
                 <div id="image-mask" className='absolute top-0 left-0 bg-slate-950/50 h-[10rem] w-[291px] z-10'></div>
                 <div className="absolute top-0 left-0 z-0 overflow-hidden">
-                    <img src={project.imageUrl} alt="" className='h-[10rem] w-[291px] object-cover' />
+                    <img src={project.imageUrl} alt="parvej khan projects" className='h-[10rem] w-[291px] object-cover' />
                 </div>
                 <div className="absolute top-2  left-2 z-20">
                     <h1 className='text-violet-400 text-2xl font-bold group-hover:text-violet-500'>{project.projectName}</h1>

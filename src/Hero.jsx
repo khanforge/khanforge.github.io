@@ -20,7 +20,7 @@ const Hero = (props) => {
                     </div>
                     <div id="photo-profile" className="absolute z-10 right-2 top-9 sm:right-5 sm:top-12 lg:top-20 xl:top-0">
                         <div className="h-52 sm:h-80 w-full lg:h-96">
-                            <img src="./profile.png" className="h-52 sm:h-80 lg:h-96 w-full" alt="" />
+                            <img src="./profile.png" className="h-52 sm:h-80 lg:h-96 w-full" alt="Parvej Khan Full Stack Developer" />
                         </div>
                     </div>
                 </div>
